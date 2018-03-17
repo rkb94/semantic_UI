@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="semantic/semantic.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="ui sidebar inverted vertical menu">
+        <a class="item">
+            1
+        </a>
+        <a class="item">
+            2
+        </a>
+        <a class="item">
+            3
+        </a>
+    </div>
+    <div class="pusher">
+        <button id="menu" class="ui button">Menu</button>
+        hellohellohello hellohellohello hellohellohello hellohellohello hellohellohello hellohellohello
+    </div>
+</body>
+<script>
+    // $('.ui.sidebar').sidebar('toggle');
+    $('#menu').click(function () {
+        $('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');
+    })
+</script>
+
+</html>
